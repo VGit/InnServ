@@ -4,5 +4,10 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
-		
+			<!-- **************************************************************** -->
+	<!-- DATA SOURCE AND TRANSACTION MANAGER FOR DATABASE -->
+	<!-- Beans for Hibernate Datasource configuration -->
+	<!-- **************************************************************** -->
+	<bean id="rdsDataSource" class="com.innserv.dao.RdsDriverManagerDataSource">
+	</bean>
 </beans>
