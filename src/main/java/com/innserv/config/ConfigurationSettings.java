@@ -72,7 +72,7 @@ public class ConfigurationSettings {
 			this.configProviderChain = new ConfigurationProviderChain(
 					//new S3EnvConfigurationProvider(),
 					//new S3FileConfigurationProvider(),
-					new ClassResourceConfigurationProvider("/app.properties"));
+					new ClassResourceConfigurationProvider("/app.properties.default"));
 			LOG.debug("ConfigurationProviderChain initialized");
 			LOG.info("Config provider: "
 					+ this.configProviderChain.getTheProvider().getClass()

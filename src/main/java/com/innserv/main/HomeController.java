@@ -35,5 +35,10 @@ public class HomeController {
 		
 		return "home";
 	}
+
 	
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	public String welcome(Locale locale, Model model) {
+		return "login";
+	}	
 }

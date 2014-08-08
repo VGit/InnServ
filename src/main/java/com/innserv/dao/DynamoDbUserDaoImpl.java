@@ -25,7 +25,7 @@ import javax.annotation.PostConstruct;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 import com.amazonaws.AmazonServiceException;
@@ -44,7 +44,7 @@ import com.innserv.config.ConfigurationSettings.ConfigProps;
 import com.innserv.domain.User;
 import com.innserv.exceptions.DataSourceTableDoesNotExistException;
 import com.innserv.exceptions.UserExistsException;
-
+@Component
 public class DynamoDbUserDaoImpl implements UserDao {
 
 	private static final Logger LOG = LoggerFactory.getLogger(DynamoDbUserDaoImpl.class);

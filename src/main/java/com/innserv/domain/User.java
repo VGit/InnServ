@@ -17,6 +17,8 @@ package com.innserv.domain;
 
 import java.io.Serializable;
 
+
+
 import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.Email;
